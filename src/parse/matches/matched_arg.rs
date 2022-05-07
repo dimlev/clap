@@ -11,7 +11,7 @@ use crate::util::eq_ignore_case;
 use crate::INTERNAL_ERROR_MSG;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub(crate) struct MatchedArg {
+pub struct MatchedArg {
     occurs: u64,
     ty: Option<ValueSource>,
     indices: Vec<usize>,
