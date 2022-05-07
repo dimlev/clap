@@ -52,7 +52,7 @@ impl MatchedArg {
         self.indices.push(index)
     }
 
-    pub(crate) fn vals(&self) -> Iter<Vec<OsString>> {
+    pub fn vals(&self) -> Iter<Vec<OsString>> {
         self.vals.iter()
     }
 
