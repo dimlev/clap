@@ -10,7 +10,7 @@ use std::{
 #[cfg_attr(not(debug_assertions), repr(transparent))]
 pub struct Id {
     #[cfg(debug_assertions)]
-    name: String,
+    pub name: String,
     id: u64,
 }
 
