@@ -74,7 +74,7 @@ pub struct ArgMatches {
     pub(crate) valid_subcommands: Vec<Id>,
     #[cfg(debug_assertions)]
     pub(crate) disable_asserts: bool,
-    pub(crate) args: IndexMap<Id, MatchedArg>,
+    pub args: IndexMap<Id, MatchedArg>,
     pub(crate) subcommand: Option<Box<SubCommand>>,
 }
 
