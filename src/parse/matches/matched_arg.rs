@@ -15,7 +15,7 @@ pub struct MatchedArg {
     occurs: u64,
     ty: Option<ValueSource>,
     indices: Vec<usize>,
-    vals: Vec<Vec<OsString>>,
+    pub vals: Vec<Vec<OsString>>,
     ignore_case: bool,
     invalid_utf8_allowed: Option<bool>,
 }
